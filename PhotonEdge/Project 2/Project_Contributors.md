@@ -1,24 +1,24 @@
-# Task Tracker App
+# Quizzify Game
 
 ## Overview
-The Task Tracker App is designed to help users organize, manage, and track their tasks efficiently. It focuses on improving productivity through a simple, intuitive, and structured task management experience.
+Quizzify is an interactive quiz-based game designed to make learning fun, competitive, and engaging. The game challenges users with dynamic questions while providing instant feedback and scoring.
 
 ## Development Team
-The Task Tracker App was collaboratively developed by:
-- **Anish**
-- **Madhura**
-- **Isha**
+The Quizzify Game was collaboratively developed by:
+- **Shreyash Atre**
+- **Ayush**
+- **Samira**
 
 ## Project Leadership
-- **Project Lead:** Madhura
+- **Project Lead:** Samira
 
 ## Contributions
-The team worked on:
-- Designing task creation, updating, and tracking features  
-- Implementing intuitive workflows for task management  
-- Ensuring usability, clarity, and responsiveness  
-- Enhancing productivity through clean design and logic  
+The team contributed to:
+- Designing engaging quiz mechanics and gameplay flow  
+- Implementing scoring, feedback, and progression logic  
+- Ensuring smooth performance and responsiveness  
+- Creating an enjoyable and intuitive user experience  
 
 ---
 
-*Built to plan better, work smarter, and stay on track.*
+*Built to learn, play, and compete.*
