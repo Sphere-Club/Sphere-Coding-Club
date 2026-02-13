@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Phoenix Mall Baner",
+        "lat": 18.5621,
+        "lng": 73.7667,
+        "type": "public",
+        "price_per_unit": 18
+    },
+    {
+        "name": "Wakad Highway Stop",
+        "lat": 18.5987,
+        "lng": 73.7638,
+        "type": "public",
+        "price_per_unit": 15
+    },
+    {
+        "name": "Hinjewadi Tech Park",
+        "lat": 18.5913,
+        "lng": 73.7389,
+        "type": "private",
+        "price_per_unit": 10
+    },
+    {
+        "name": "Kothrud Depot",
+        "lat": 18.5074,
+        "lng": 73.8077,
+        "type": "public",
+        "price_per_unit": 12
+    },
+    {
+        "name": "Shivajinagar Fast Charge",
+        "lat": 18.5314,
+        "lng": 73.8446,
+        "type": "public",
+        "price_per_unit": 20
+    }
+]
