@@ -1,0 +1,8 @@
+{
+  "name": "SkillSwap",
+  "description": "A peer-to-peer skill exchange platform for zero-cost community-driven learning. Exchange knowledge, not money.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
