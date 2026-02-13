@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MedVision AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="logo-container" onclick="showPage('home')" style="cursor: pointer;">
+        <img src="logo.png" alt="MedVision AI" class="site-logo">
+    </div>
+    <h1 class="brand-text">MedVision AI</h1>
+    <div class="nav-actions">
+        <button id="darkToggle">🌙</button>
+         <a href="page2.html#signin" class="primary-btn">Get Started</a>
+    </div>
+</header>
+
+<!-- ===== HOME PAGE ===== -->
+<section id="home" class="page active fade">
+    <h2><span class="pill">AI-Powered Dermatology</span></h2>
+
+    <h1>Smart Skin Health Analysis</h1>
+    <p>
+        Upload a photo and get instant AI-powered insights about your skin
+        condition with personalized care recommendations.
+    </p>
+
+    <div class="hero-actions">
+        <button class="primary-btn" onclick="showPage('upload')">Start Free Analysis</button>
+        <button class="secondary-btn">Learn More</button>
+    </div>
+
+    <div class="stats">
+  <div><strong>50K+</strong><span>Scans Analyzed</span></div>
+  <div><strong>95%</strong><span>Accuracy Rate</span></div>
+  <div><strong>200+</strong><span>Doctors Connected</span></div>
+</div>
+
+
+    <!-- Feature Cards -->
+    <div class="features">
+        <div class="feature-card">
+            <h3>🧠 AI Analysis</h3>
+            <p>Advanced machine learning for accurate skin detection</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔒Secure & Private</h3>
+            <p>Your data is encrypted and confidential</p>
+        </div>
+        <div class="feature-card">
+            <h3>⚡Instant Results</h3>
+            <p>Get insights in seconds, not days</p>
+        </div>
+        <div class="feature-card">
+            <h3>👨‍⚕️Expert Network</h3>
+            <p>Connect with certified dermatologists</p>
+        </div>
+    </div>
+
+
+<section class="how">
+  <h2><br>How MedVision AI Works</h2>
+  <div class="steps">
+    <div>📸 Upload Skin Image</div>
+    <div>🤖 AI Analyzes Condition</div>
+    <div>📊 Get Instant Report</div>
+    <div>👨‍⚕️ Consult Experts</div>
+  </div>
+</section>
+<footer class="footer">
+  <p>© 2026 MedVision AI • AI-assisted dermatology</p>
+</footer>
+
+</section>
+
+
+<!-- ===== UPLOAD PAGE ===== -->
+<section id="upload" class="page fade">
+    <div class="card upload-card">
+
+        <h2>Analyze Your Skin</h2>
+        <p>Upload a clear photo of the affected area</p>
+
+        <div class="upload-box" onclick="fileInput.click()">
+            <p>📤 Upload Image</p>
+            <span>JPG, PNG, WEBP (max 10MB)</span>
+            <img id="preview" hidden>
+        </div>
+
+        <input type="file" id="fileInput" hidden accept="image/*">
+
+        <button class="primary-btn full" onclick="analyzeSkin()">Analyze Skin Condition</button><br><br>
+        <button class="back-btn" onclick="showPage('home')">Home</button>
+    </div>
+</section>
+
+
+<!-- RESULT (EMPTY – FILLED BY BACKEND) -->
+<section id="result" class="page fade">
+    
+
+    <div class="card">
+        <h2 id="conditionName">—</h2>
+        <p id="confidence">—</p>
+
+        <h3>What We Found</h3>
+        <p id="description">Waiting for analysis...</p>
+
+        <div class="grid">
+            <div>
+                <h4 class="green">Do’s</h4>
+                <ul id="dosList"></ul>
+            </div>
+
+            <div>
+                <h4 class="red">Don’ts</h4>
+                <ul id="dontsList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Recommended Specialists</h3>
+        <div id="doctors"></div>
+    </div>
+
+    <div class="card warning">
+        ⚠️ This is an AI-assisted analysis and does not replace professional medical advice.
+    </div>
+
+    <div class="action-row">
+        <button class="back-btn" onclick="showPage('home')">Back</button>
+        <button class="primary-btn">Download Report</button>
+        <button class="secondary-btn" onclick="showPage('upload')">New Analysis</button>
+    </div>
+
+
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>

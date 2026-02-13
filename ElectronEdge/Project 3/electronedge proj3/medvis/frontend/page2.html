@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MedVision AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+    <div class="logo">MedVision AI</div>
+    <div class="nav-actions">
+        <button id="darkToggle">🌙</button>
+        <a href="index.html" class="secondary-btn">Home</a>
+    </div>
+</header>
+
+
+    <div class="auth-wrapper">
+  <div class="auth-card">
+
+    <!-- Logo -->
+    <div class="logo">
+      <div class="icon">💚</div>
+      <h1>MedVision AI</h1>
+      <p>Your smart skin health companion</p>
+    </div>
+
+    <!-- Toggle -->
+    <div class="toggle">
+      <button id="signinBtn" class="active">Sign In</button>
+      <button id="signupBtn">Sign Up</button>
+    </div>
+
+    <!-- Sliding Forms -->
+    <div class="form-container">
+      <div class="forms">
+
+        <!-- SIGN IN -->
+        <form class="form">
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required>
+
+          <label>Password</label>
+          <input type="password" placeholder="••••••••" required minlength="8">
+
+          <button type="submit" class="main-btn">Sign In</button>
+        </form>
+
+        <!-- SIGN UP -->
+        <form class="form">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your name" required>
+
+          <label>City</label>
+          <select required>
+            <option value="">Select City</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Other">Other</option>
+        </select>
+
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required>
+
+          <label>Password</label>
+          <input type="password" id="signupPassword" placeholder="Create password (8-72 characters)" required minlength="8" maxlength="72">
+          <div id="passwordHelp" style="font-size: 0.8rem; color: #666; margin-top: 0.25rem;">
+            Password must be 8-72 characters long
+          </div>
+
+          <button type="submit" class="main-btn">Create Account</button>
+          </form>   
+          
+      </div>
+    </div>
+    
+    
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
